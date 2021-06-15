@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Este sitio WEB es mi pagina de peliculas clasicas en el que encontrarás titulos, videos, banda sonora, detalles, sinopsis y novedades..."
+    />
+    <meta
+      name="keywords"
+      content="FOTOS, VIDEOS, SONIDO, SINOPSIS, BEETLEJUICE, HECHIZO DEL TIEMPO, CAZAFANTASMAS, GALAXIAS, BAILA, SILENCIO, INOCENTES"
+    />
+    <title>Peliculas Clasicas para Todos</title>
+    <link href="./imagenes/favicon.gif" type="image/x-ico" rel="icon" />
+    <!-- Bootstrap CDN en la Nube CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- Estilo propio -->
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body class="container-fluid">
+    <!-- ########################################################## -->
+    <!-- Encabezado con link redes sociales y buscador de peliculas -->
+    <!-- ########################################################## -->
+    <header
+      id="arriba"
+      class="
+        gradiente-radial
+        d-inline-flex
+        flex-wrap
+        justify-content-center justify-content-md-between
+        align-items-center
+        w-100
+      "
+    >
+      <!-- Logo de la pagina -->
+      <div class="d-none d-sm-block m-3">
+        <a href="./index.html">
+          <img id="logo" src="./imagenes/logo.png" alt="logo de la pagina" />
+        </a>
+      </div>
+      <!-- Titulo de la pagina -->
+      <h1 id="titulo m-3">PelisClasicas.com</h1>
+      <aside class="m-3">
+        <!-- iconos de redes sociales -->
+        <section class="text-right m-1">
+          <a href="./paginas/contactanos.html">
+            <img
+              src="./imagenes/correo.png"
+              alt="formulario de contacto"
+              class="rounded-lg m-1"
+            />
+          </a>
+          <a href="https://twitter.com/tweeter?lang=es" target="_blank">
+            <img
+              src="./imagenes/twiter.png"
+              alt="ir a twitter"
+              class="rounded-lg m-1"
+            />
+          </a>
+          <a href="https://ar.pinterest.com/" target="_blank">
+            <img
+              src="./imagenes/pinterest.png"
+              alt="ir a pinterest"
+              class="rounded-lg m-1"
+            />
+          </a>
+          <a href="https://www.instagram.com/?hl=es" target="_blank">
+            <img
+              src="./imagenes/instagram.png"
+              alt="ir a instagram"
+              class="rounded-lg m-1"
+            />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              src="./imagenes/facebook.png"
+              alt="ir a facebook"
+              class="rounded-lg m-1"
+            />
+          </a>
+        </section>
+        <!-- buscardor de peliculas -->
+        <section class="text-right m-1">
+          <form action="">
+            <fieldset>
+              <input
+                class="m-1"
+                type="text"
+                name="buscapeli"
+                placeholder="Nombre de la Pelicula"
+              />
+              <input class="m-1" type="submit" value="Buscar" />
+            </fieldset>
+          </form>
+        </section>
+      </aside>
+      <!-- Mensaje bienvenida -->
+      <p class="d-none d-sm-block">
+        Bienvenidos a Nuestra Pagina de Peliculas Clasicas<br />
+        Si no la tenemos, avisanos y la buscamos por vos!!!
+      </p>
+    </header>
+    <!-- ############## -->
+    <!-- Menu principal -->
+    <!-- ############## -->
+    <nav class="navbar navbar-expand-lg fondoMenu">
+      <a class="navbar-brand boton-menu ml-2" href="#">PelisClasicas.com</a>
+      <button
+        class="navbar-toggler mr-2"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link boton-menu" href="./index.html">
+              <span class="homeMenu"></span>
+              <span>Inicio</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link boton-menu" href="./paginas/top-5.html">Top 5</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link boton-menu" href="./paginas/ultima-semana.html"
+              ><span class="ultimaSemMenu"></span
+              ><span class="">Ultima Semana</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link boton-menu" href="./paginas/novedades.html"
+              >Novedades</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle boton-menu"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Secciones
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="./paginas/lista-general.html"
+                >Lista General</a
+              >
+              <a class="dropdown-item" href="./paginas/beetlejuice.html"
+                >Beetlejuice</a
+              >
+              <a class="dropdown-item" href="./paginas/hechizo_del_tiempo.html"
+                >Hechizo del Tiempo</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <!-- ################################# -->
+      <!-- Carrousel El mas copado del mundo -->
+      <!-- ################################# -->
+      <section class="row justify-content-center align-items-center">
+        <div
+          id="carousel-peliculas"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carousel-peliculas"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carousel-peliculas" data-slide-to="1"></li>
+            <li data-target="#carousel-peliculas" data-slide-to="2"></li>
+            <li data-target="#carousel-peliculas" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="img-carousel-tam rounded mx-auto d-block"
+                alt="caratula de videocinta de la pelicula la guerra de las galaxias"
+                src="./imagenes/la_guerra_de_las_galaxias-1200x970.jpg"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="cartel-pelicula">La Guerra de las Galaxias</h5>
+                <p>...</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-carousel-tam rounded mx-auto d-block"
+                alt="caratula de videocinta de la pelicula pasiones robadas"
+                src="./imagenes/pasiones-robadas-1200x970.jpg"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="cartel-pelicula">Pasiones Robadas</h5>
+                <p>...</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-carousel-tam rounded mx-auto d-block"
+                alt="caratula de videocinta de la pelicula busqueda frenetica"
+                src="./imagenes/busqueda-frenetica-1200x970.jpg"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="cartel-pelicula">Busqueda Frenetica</h5>
+                <p>...</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="img-carousel-tam rounded mx-auto d-block"
+                alt="caratula de videocinta de la pelicula los 2 hijos de francisco"
+                src="./imagenes/2_hijos_de_francisco-1200x970.jpg"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="cartel-pelicula">Los 2 hijos de Francisco</h5>
+                <p>...</p>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carousel-peliculas"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previo</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carousel-peliculas"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </section>
+      <!-- ################ -->
+      <!-- Seccion central -->
+      <!-- ################ -->
+      <section
+        class="row justify-content-center align-items-center text-center mt-5"
+      >
+        <h2 id="arriba" class="col-8 col-md-6 col-lg-4">Cartelera Principal</h2>
+        <div class="col-12 fuente-celeste">
+          <a href="#pie">Ir abajo</a>
+        </div>
+      </section>
+      <section class="row justify-content-center m-3">
+        <article class="col-6 tarjeta-pelicula m-3 p-2">
+          <a href="./paginas/beetlejuice.html">
+            <img
+              class="img-fluid"
+              src="./imagenes/beetlejuice-50.png"
+              alt="imagen de pelicula
+                  beetlejuice"
+            />
+            <h3 class="titulo-pelicula-principal">BeetleJuice</h3>
+          </a>
+          <h4 class="d-ocultar-chico">Sinopsis</h4>
+          <p class="d-ocultar-chico">
+            Beetlejuice (titulada Bitelchus en España) es una película
+            estadounidense dirigida por Tim Burton y estrenada en 1988.​ Es una
+            comedia de terror, que mezcla los géneros del humor e historia de
+            fantasmas y está protagonizada por Beetlejuice, un personaje
+            inventado por Burton. La película dio lugar a una serie de
+            televisión de animación que el mismo Burton produjo.<br />
+            Beetlejuice es un difunto que vive en el no mundo...
+            <button>
+              <a href="./paginas/beetlejuice.html">Mas info</a>
+            </button>
+          </p>
+        </article>
+        <article class="col-6 tarjeta-pelicula m-3 p-2">
+          <a href="./paginas/hechizo_del_tiempo.html">
+            <img
+              src="./imagenes/groundhog-day-50.png"
+              alt="imagen de pelicula hechizo del tiempo"
+              class="img-fluid rounded"
+            />
+            <h3 class="titulo-pelicula-principal">Hechizo del tiempo</h3>
+          </a>
+          <h4 class="d-ocultar-chico">Sinopsis</h4>
+          <p class="d-ocultar-chico">
+            Groundhog Day (Atrapado en el tiempo en España, El día de la marmota
+            en Chile, Argentina, México y Venezuela y Hechizo del tiempo en el
+            resto de Hispanoamérica) es una película de Cine fantástico y alto
+            contenido metafísico estadounidense de 1993 dirigida por Harold
+            Ramis, y protagonizada por Bill Murray, Andie MacDowell, y Chris
+            Elliott. Fue escrita por Ramis y Danny Rubin, basada en una historia
+            de Rubin.​ Murray interpreta a Phil Connors, un arrogante
+            meteorólogo...
+            <button>
+              <a href="./paginas/hechizo_del_tiempo.html">Mas info</a>
+            </button>
+          </p>
+        </article>
+      </section>
+      <div class="row justify-content-center align-items-center text-center">
+        <h2 class="col-8 col-md-4">Curiosidades</h2>
+      </div>
+      <section class="row justify-content-center m-3">
+        <article class="col-12 col-md-8 caja-pelicula">
+          <h3 class="titulo-pelicula">Star Wars</h3>
+          <p class="text-justify">
+            <img
+              class="img-rodea-texto img-thumbnail"
+              src="./imagenes/la_guerra_de_las_galaxias-320x170.jpg"
+              alt="George Lucas en el rodaje de la pelicula"
+            />
+            <span class="d-ocultar-chico">
+              <span class="fuente-destaca-celeste">George Lucas</span>, escribió
+              un guión pero a ningún estudio le agrado, alegaron que a nadie le
+              gustaba la ciencia ficción, entonces encontró un productor que
+              financiaría su película, pero ni siquiera a él le convencio la
+              historia, lo hizo con la condicion que en un futuro realizara
+              películas para él, entonces accedió a un presupuesto muy bajo,
+              porque creyó en su historia, desde el principio la película
+              parecía destinada al fracaso, por lo que tuvo que crear un estudio
+              entero <strong>Industrias Ligth Magic</strong>, en el que diseño
+              un sistema completamente nuevo de cámaras controladas por
+              <span class="collapse" id="collapseLeerMas">
+                computadoras que les daba a las batallas espaciales el dinamismo
+                que había previsto. Tampoco quería que el sonido de esta
+                película pareciera prefabricado deseaba
+                <span class="fuente-destaca-celeste">sonidos reales</span> en su
+                mundo imaginario así que contrato a alguien para grabarlos, el
+                proceso llevo todo un año, no contaba con mas presupuesto, los
+                técnicos no querían trabajar horas extras no les gustaban lo que
+                estaban grabando todos los involucrados estaban convencidos de
+                que la película seria un fracaso total nadie entendía el alcance
+                de su visión así que retraso la fecha del estreno para trabajar
+                mas en ella, lo que causo un aumento del 40% en el presupuesto,
+                el estudio no sabia como comercializar la película, ni siquiera
+                lo intento, en consecuencia el film se
+                <strong>estreno</strong> solo en 35 cines, el
+                <strong>25 de mayo de 1977</strong> y la voz comenzó a correrse,
+                STAR WARS se convirtió en una película extraordinaria y todo el
+                mundo tenia que verla, logró ser una franquicia cinematográfica
+                con la mejor recaudación económica de la época, en la actualidad
+                es una de la mas exitosas de la historias.<br />
+                <i class="fuente-destaca-bordo"
+                  >"Siempre recuerda tu enfoque determina tu realidad"</i
+                ><br />
+                Autor George Lucas...
+              </span>
+              <button
+                class="btn-leer-mas"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseLeerMas"
+                aria-expanded="false"
+                aria-controls="collapseLeerMas"
+              >
+                Leer +/-
+              </button>
+            </span>
+          </p>
+        </article>
+      </section>
+    </main>
+    <!-- ############# -->
+    <!-- Pie de Pagina -->
+    <!-- ############# -->
+    <footer id="pie" class="container-fluid">
+      <div id="pie1renglon" class="row">
+        <nav class="navbar navbar-expand-lg fondoMenu col-12">
+          ><a class="navbar-brand boton-menu" href="#"
+            >PelisClasicas.com copyright 2021c</a
+          >
+          <ul class="navbar-nav w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link boton-menu" href="./paginas/quienes-somos.html"
+                >Quienes Somos <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link boton-menu" href="./paginas/contactanos.html"
+                >Contactanos</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="pie2renglon" class="row fuente-celeste">
+        <ul class="col-12 text-center">
+          <li class="d-inline">
+            <a href="#arriba">Ir arriba</a>
+          </li>
+          <li class="d-inline">
+            <a href="./index.html">Volver al Inicio</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- JS de BOOTSTRAP -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
